@@ -1,0 +1,89 @@
+/* PROJECT STYLES */
+
+.project-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-flex-container > img {
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+    display: flexbox;
+}
+
+.project-details {
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+    display: flexbox;
+    align-items: right;
+    
+}
+
+#project-1 < img {
+    align-items: right;
+}
+
+
+
+
+
+
+
+<div class="project flex-container" id="project-1">
+        <div class="project-details">
+            <h2>ProCase Displays: Ecommerce and Marketing</h2>
+            <p>ProCase Displays specialized in creating customizable acrylic display cases for all sorts of memorabilia. Merging style with functionality, they aim to elevate collections to the next level. My role in this project has mainly been the creation of the ecommerce website as well as the marketing strategies and social media management.</p> 
+            <button class="button">View Project</button>
+        </div>
+        <img src="https://lh3.googleusercontent.com/p/AF1QipO9-H0ovDEXXEd0cEtd3uU3Su_hFw7xBW-o7yu1=s1360-w1360-h1020" alt="ProCase Displays" class="project-image" width="300"> 
+    </div>
+    <br><br>
+    <div class="project flex-container" id="project-2">
+        <div class="project-details">
+            <h3>Project 2</h3><br> <!-- CHANGE NAME-->
+            <p>Project Description</p> <!-- CHANGE DESCRIPTION-->
+        </div>
+        <img src="https://via.placeholder.com/150" alt="Project 2" class="project-image" width="300" height="150"> <!-- CHANGE IMAGE-->
+        <button>View Project</button>
+    </div>
+
+
+
+
+   
+
+
+    .project-flex-container {
+        display: flex;
+        margin-top: 20px;
+        padding-top: 15px;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        text-align: left;
+        justify-content: space-between;
+    }
+    
+    #project-1 img {
+        width: 25%;
+        height: auto;
+        float: right;
+        position: relative;
+        margin: auto;
+        padding-bottom: 10px;
+        z-index: 1;
+    }
+    
+    #project-1 p {
+        width: 60%;
+        margin-top: 0;
+        padding-bottom: 5px;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: left;
+    }
