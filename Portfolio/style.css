@@ -92,7 +92,7 @@ header nav {
 }
 
 header ul {
-    padding: 0;
+    padding-left: 11rem;
     display: flex;
     justify-content: center;
     align-items: center;
