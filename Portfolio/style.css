@@ -1,5 +1,11 @@
 /* GENERAL STYLES */ 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body, main {
     margin: 0;
     padding: 0;
@@ -141,6 +147,7 @@ header a {
         color: white;
         margin-top: 10px;
         width: 500px;
+        ;
 }
 
 #intro-text {
@@ -157,6 +164,8 @@ header a {
 .featured_projects {
     display: flex;
     margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 #featured-projects-h1:after {
@@ -172,6 +181,7 @@ header a {
 
 .project-flex-container {
     display: flex;
+    justify-content: space-between;
     margin-top: 20rem;
     padding: 15px 10px;
     width: 100%;
@@ -190,11 +200,10 @@ header a {
     padding-bottom: 2rem;
 }
 
-#project-1 img {
+.featured_projects img {
     width: 25%;
     height: auto;
     position: relative;
-    display: inline-flex;
     vertical-align: middle;
     margin: auto;
     float: right;
