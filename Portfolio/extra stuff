@@ -87,3 +87,351 @@
         justify-content: flex-start;
         align-items: left;
     }
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+<div class="container">
+    
+    <!-- Header -->
+    <header> 
+            <img 
+            id="header-img" 
+            alt="Drawing of Elisa" 
+            src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2F5FzBprITyoaARMwk6Iy8%2Fe99528df-b738-4a62-88a4-fd7ec84779a9_1_201_a.jpeg?alt=media&token=667c811f-68b0-4a5a-a186-be568b29436c"
+            width="75"
+            >
+            <h1>Elisa Carrasco Lanusse</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="#work-section">Work</a></li>
+                <li><a href="#play-section">Play</a></li>
+                <li><a href="#about-section">About Me</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<main>
+<!-- Introduction -->
+<div class="intro">
+    <div class="img" id="intro-image">
+    <img src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2F5FzBprITyoaARMwk6Iy8%2Fimg_0712.jpeg?alt=media&token=b0f9664a-3f33-485d-96f7-bdfeb33dc9d3" alt="It's me!" width="450px"> 
+    <div id="intro-caption">I currently live in St. Louis with my partner Jill and our cat Dax (sadly not pictured).</div>
+    </div>
+    <div class="text" id="intro-text">
+        <h2>Hi, I'm Elisa!</h2>
+        <p>Welcome to my portfolio! I'm a sociologist with a passion for the creation and maintaining of public sociology and accessible design. I am also a <i> "todera" </i> and always looking for new projects and hobbies to work on, so feel free to reach out if you'd like to collaborate! I dabble some in drawing, writing, user-experience r&d, and starting on web-design :)</p>
+        <br>
+        <button class="button" id="learn-more-btn">Learn More</button>
+    </div>
+</div>
+
+<!-- Featured Projects -->
+<div class="featured-projects">
+    <h1 id="featured-projects-h1">Featured Projects</h1>
+</div>
+<div class="wrapper" id="project-1">
+        <div class="project-details">
+            <h2>ProCase Displays: Ecommerce and Marketing</h2> 
+            <p>ProCase Displays specialized in creating customizable acrylic display cases for all sorts of memorabilia. Merging style with functionality, they aim to elevate collections to the next level. My role in this project has mainly been the creation of the ecommerce website as well as the marketing strategies and social media management.</p> 
+            <button>View Project</button>
+            <div class="img" id="ProCase-image">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXiJJWlLQn_LFZEHM-T0W524CmvAteQKUJ1Q6xiYYXxaUgItZc=s265-w265-h265" alt="ProCase Displays" class="project-image" width="300"> 
+                </div>
+    </div>
+</div>
+
+<!-- Other Projects -->
+<div class="other-projects">
+    <h1 id="other-projects-h1">Other Projects</h1>
+</div>
+</main>
+</body>
+<footer>
+    <div class="footer">
+        <p>Created with love by Elisa Carrasco Lanusse</p>
+        <p>
+</footer>
+</html>
+
+    
+
+
+/* GENERAL STYLES */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+button {
+    position: relative;
+    display: inline-box;
+    background-color: white; 
+    color: #333; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin: 10px; 
+}
+
+button:hover {
+    background-color: #00b342; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+/* HEADER STYLES */ 
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 110px;
+    width: 100%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#header-img {
+    margin: 20px;
+    border-radius: 20%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;    
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header ul {
+    padding-left: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* INTRO STYLES */
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 15px 0;
+}
+
+#intro-image {
+    width: 20%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+
+#intro-caption {
+        text-align: left;
+        font-size: 14px;
+        color: white;
+        margin-top: 10px;
+        width: 500px;
+        position: relative;
+}
+
+#intro-text {
+    width: 45%;
+    margin-top: 0;
+    padding-bottom: 75px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: left;
+}
+
+/* FEATURED PROJECT STYLES */
+
+.featured_projects {
+    display: flex;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#featured-projects-h1:after {
+    display: inline-block;
+    content: "";
+    height: 4px;
+    background: white;
+    position: flex;
+    width: 71%;
+    margin-left: 15px; 
+    margin-bottom: 5px;
+}
+
+.project-flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20rem;
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #333;
+    gap: 20px; 
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+#project-1 p {
+    flex: 1; /* Makes the text take up the remaining space */
+    display: flex;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.featured_projects img {
+    width: 25%;
+    height: auto;
+    position: relative;
+    right: 80px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+
+/* OTHER PROJECTS STYLES */
+
+#other-projects-h1:after {
+    display: inline-block;
+    content: "";
+    height: 4px;
+    background: white;
+    position: flex;
+    width: 77%;
+    margin-left: 15px; 
+    margin-bottom: 5px;
+}
+
+
+
+/* FOOTER STYLES */
+footer {
+    padding: 10px;
+    margin-top: 0px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+
+
+
+#coming-soon {
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+button {
+    position: relative;
+    display: inline-box;
+    background-color: white; 
+    color: #333; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin: 10px; 
+}
