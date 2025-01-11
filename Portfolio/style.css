@@ -1,5 +1,4 @@
 /* GENERAL STYLES */ 
-
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +43,7 @@ button:hover {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 110px;
+    padding: 1rem 1 rem;
     width: 100%;
     position:relative;
     display: flex;
@@ -55,21 +54,27 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 30%;
 }
 
 #header-img {
-    margin-right: 20px;
+    margin-right: 5rem;
+    padding: auto;
     border-radius: 20%;
     width: 75px;
     height: 75px;
+    position: relative;
+    margin-top: 16px;
+    cursor: pointer;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 24px;
+    margin: auto;
+    font-size: 28px;
+    position:relative;
+    width: 100%;
+
 }
 
 nav#menu ul {
@@ -81,7 +86,8 @@ nav#menu ul {
 }
 
 nav#menu li {
-    padding: 0 20px;
+    padding: 0 2rem;
+    marker: ;
 }
 
 nav#menu a {
@@ -101,30 +107,31 @@ nav#menu a {
 }
 
 .intro-image {
-     width: 450px;
-     border-radius: 10px;
+    width: 450px;
 }
 
 #intro-caption {
     text-align: left;
     font-size: 14px;
     color: white;
-    padding: 10px;
+    padding: 1px;
     width: 90%;
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 .intro-text {
     max-width: 600px;
-    margin-left: 20px;
+    margin-left: 35px;
+    margin: 35px;
 }
 
 .intro-text h2 {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .intro-text p {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    margin-top: 35px;
 }
 
 #learn-more-btn {
@@ -135,7 +142,9 @@ nav#menu a {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
+
 #learn-more-btn:hover {
     background-color: #009643;
     color: white;
@@ -148,11 +157,11 @@ nav#menu a {
 }
 
 .featured-projects h1 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 
-.project {
+.project-1 {
     margin-bottom: 20px;
 }
 
